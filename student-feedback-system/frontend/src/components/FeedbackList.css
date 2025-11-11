@@ -1,0 +1,111 @@
+.feedback-list-container {
+  margin-top: 1.5rem;
+}
+
+.feedback-item-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.feedback-item-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.feedback-status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.feedback-category {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+}
+
+p.feedback-content {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  /* Show full content, not just substring */
+  white-space: pre-wrap; /* Preserves line breaks */
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #777;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dashed #eee;
+}
+
+.feedback-rating {
+  font-size: 1rem;
+  color: #f39c12;
+}
+
+/* --- NEW STYLES FOR MODULE 5 --- */
+
+.thread-preview-container {
+  margin-top: 1rem;
+}
+
+.thread-preview-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.comment-bubble {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  max-width: 90%;
+  margin-bottom: 0.5rem;
+}
+
+.admin-comment {
+  align-self: flex-start;
+  background-color: #e9f5ff; /* Light blue for admin */
+  border: 1px solid #cce5ff;
+}
+
+.comment-content {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #113c66;
+  white-space: pre-wrap; /* Preserves line breaks in reply */
+}
+
+.comment-meta {
+  font-size: 0.8rem;
+  color: #6699cc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-meta strong {
+  font-weight: 700;
+}

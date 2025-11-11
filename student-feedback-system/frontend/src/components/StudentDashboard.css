@@ -1,0 +1,116 @@
+/* --- 1. Main Layout & Header --- */
+.student-dashboard {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f7f6;
+  min-height: 100vh;
+}
+
+.student-header {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem; /* Spacing between items */
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.student-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.student-user-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.student-user-info strong {
+  color: #333;
+}
+
+.student-actions {
+  display: flex;
+  gap: 0.5rem; /* Space between buttons */
+  margin-left: auto; /* Push buttons to the right */
+}
+
+/* Responsive adjustment for header buttons */
+@media (max-width: 600px) {
+  .student-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .student-actions {
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* --- 2. Button Styles --- */
+.student-button {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.student-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px); /* Slight lift on hover */
+}
+
+.logout-button {
+  background-color: #dc3545;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+/* --- 3. Main Content Section --- */
+.feedback-section {
+  max-width: 900px;
+  margin: 2rem auto; /* Center the content */
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-section h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.feedback-loading {
+  font-size: 1rem;
+  color: #555;
+}
+
+.feedback-error {
+  font-size: 1rem;
+  color: #dc3545;
+  font-weight: 500;
+}
